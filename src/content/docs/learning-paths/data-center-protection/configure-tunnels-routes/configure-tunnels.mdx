@@ -1,15 +1,11 @@
 ---
-pcx_content_type: how-to
-title: Configure tunnel endpoints
+title: Configure tunnels
+pcx_content_type: learning-unit
 sidebar:
   order: 1
-head: []
-description: Cloudflare recommends two tunnels for each ISP and network location
-  router combination, one per Cloudflare endpoint. Learn how to configure IPsec
-  or GRE tunnels.
 ---
 
-import { Render } from "~/components";
+import { GlossaryTooltip, Render } from "~/components";
 
 <Render file="routing/configure-tunnels"
 	product="networking-services"
@@ -28,7 +24,3 @@ import { Render } from "~/components";
 		tunnelHealthDash: "/magic-transit/network-health/check-tunnel-health-dashboard/",
 		biVsUniHealthCheckDefaults: "For Magic Transit this option defaults to unidirectional"
 	}} />
-
-## Next steps
-
-Now that you have set up your tunnel endpoints, you need to configure routes to route your traffic through Cloudflare. Refer to [Configure routes](/magic-transit/how-to/configure-routes/) to learn more about static routing and BGP peering (only available through Direct CNI connection).
